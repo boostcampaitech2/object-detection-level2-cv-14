@@ -2,4 +2,4 @@ classes= 10
 train = C:/Dataset/Detection/dataset/darknet/fold_1_train.txt
 valid = C:/Dataset/Detection/dataset/darknet/fold_1_valid.txt
 names = custom.names
-backup = ./backup
+backup = C:/Dataset/Detection/yolo

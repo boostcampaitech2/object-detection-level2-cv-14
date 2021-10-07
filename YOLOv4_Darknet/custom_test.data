@@ -1,0 +1,4 @@
+classes= 10
+test = ./darknet_test.txt
+names = custom.names
+backup = ./backup
