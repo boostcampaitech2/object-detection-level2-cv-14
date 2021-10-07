@@ -3,6 +3,7 @@ import cv2
 
 '''
 이 코드는 모델이 Test 데이터를 추론한 결과를 눈으로 확인하기 위한 Visualization 목적으로 제작하였습니다.
+이 코드는 GUI 환경에서 작동되므로, 콘솔환경에서는 사용하실 수 없습니다.
 
 Visualization 타겟은 다음과 같습니다.
  - Target Image
