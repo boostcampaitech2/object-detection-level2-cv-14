@@ -3,6 +3,7 @@ import cv2
 
 '''
 이 코드는 모델이 Test 데이터를 추론한 결과를 눈으로 확인하기 위한 Visualization 목적으로 제작하였습니다.
+이 코드는 GUI 환경에서 작동되므로, 콘솔환경에서는 사용하실 수 없습니다.
 
 Visualization 타겟은 다음과 같습니다.
  - Target Image
@@ -28,7 +29,8 @@ Visualization 타겟은 다음과 같습니다.
 '''
 
 imageRoot = r'C:/Dataset/Detection/dataset/test' # Test 이미지가 있는 경로를 입력합니다.
-annotationPath = r'C:/Dataset/submission_epoch_24.csv' # 모델에 의해 추론된 최종 제출 csv 파일 경로를 입력합니다.
+#annotationPath = r'C:\Users\intel\OneDrive\Project\BoostCamp\PStage_ObjectDetection\object-detection-level2-cv-14\YOLOv4_Darknet\yolov4_darknet_submission.csv' # 모델에 의해 추론된 최종 제출 csv 파일 경로를 입력합니다.
+annotationPath = r'C:\Dataset\submission_epoch_24.csv'
 
 def main():
     # 클래스 인덱스에 따른 클래스이름을 정의합니다.
