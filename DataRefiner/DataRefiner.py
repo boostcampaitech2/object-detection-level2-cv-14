@@ -105,6 +105,7 @@ def LoadAnnotations(sourceAnnotation):
             "area": bbox_origin["area"],
             "bbox" : bbox_origin["bbox"],
             "id" : bbox_origin["id"],
+            "iscrowd": bbox_origin["iscrowd"],
         }
         annotations["images"][bbox["image_id"]]["bboxes"].append(bbox)
 
