@@ -1,26 +1,10 @@
-'''
-backbone : Swin T
-detector : fasterRCNN
-neck : fpn
-optimizer : Adam (lr=0.0002)
-lr scheduler : CosineAnnealing
-batch_size : 8(dataset.py 의 samples_per_gpu로 조절 가능)
-epoch : 32
-
-- swinT_fasterRCNN_fpn_config 폴더는 detection/mmdetection/configs/ 아래 두시면 됩니다.
-- 다음 코드로 학습하면 됩니다.
-python tools/train.py configs/swinT_fasterRCNN_fpn_config/final_config.py --seed=2021
-
-'''
-
-
 _base_ = [
     'faster_rcnn_r50_fpn.py',
     'dataset.py',
     'schedule_2x.py', 'default_runtime.py'
 ]
 
-# swin transformer 덮어씌우기
+#swin transformer 덮어씌우기
 pretrained = 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth'  
 model = dict(
     #type='MaskRCNN', # detector로 우리가 지정한 faster_rcnn_r50_fpn을 사용할거라 이부분 지우고 
@@ -44,17 +28,18 @@ model = dict(
         init_cfg=dict(type='Pretrained', checkpoint=pretrained)),
     neck=dict(in_channels=[96, 192, 384, 768]))
 
+
 # valuation metric 설정
 evaluation = dict(
         interval = 1, # valid로 evaluation하는 interval(epoch기준)
         metric = 'bbox', # evaluation동안 metric
-        save_best = 'bbox_mAP_50', # bbox_mAP_50이 증가하지 않으면 모델 저장하지 않음. 
-        classwise = True # evalutation 마다 class별 AP를 확인 가능.
+        save_best = 'bbox_mAP_50', # bbox_mAP_50이 
+        classwise = True # evalutation 마다 
 )
 
 #checkpoint config 설정
 # 학습 초반에는 bbox_mAP_50이 한동안 증가하므로 에폭마다 저장됨. faster rcnn은 보통 30에폭 넘으면 수렴해서 interval을 3으로 줘도 괜찮을듯. 
 checkpoint_config= dict(
-        interval=1, 
-        out_dir = '/opt/ml/detection/mmdetection/work_dirs/test_for_hooks',# 모델 저장하는 위치(따로 지정 안 하면 현재 config파일 이름으로 새 work_dir 폴더가 만들어짐)
+        #interval=1, # interval=1하면 에폭마다 모델이 저장됨. 이 부분을 없애면 best모델이 계속해서 하나의 파일에 덮어쓰기로 저장됨.
+        out_dir = '/opt/ml/detection/mmdetection/work_dirs/fold3_aug_swinT_fasterRCNN',# 모델 저장하는 위치(따로 지정 안 하면 현재 config파일 이름으로 새 work_dir 폴더가 만들어짐)
 )

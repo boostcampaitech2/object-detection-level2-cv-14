@@ -8,7 +8,7 @@ log_config = dict(
         dict(type='WandbLoggerHook',interval=1000, 
             init_kwargs=dict(
                 project='fasterRCNN_r50_fpn',
-                name = 'exp6_cosineAnnealing') #'실험할때마다 RUN에 찍히는 이름'
+                name = 'fold3_cosineAnnealing_aug') #'실험할때마다 RUN에 찍히는 이름'
             )
     ])
 # yapf:enable
