@@ -80,8 +80,8 @@ data = dict(
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=annotation_root + 'test.json'
-        img_prefix=data_root
+        ann_file=annotation_root + 'test.json',
+        img_prefix=data_root,
         classes=classes,
         pipeline=test_pipeline))
 
