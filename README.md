@@ -14,8 +14,8 @@
 
 ||이름|역할|github|
 |--|------|---|---|
-|😙|김범수|---|https://github.com/HYU-kbs|
-|🤗|김준태|---|https://github.com/sronger|
+|😙|김범수|EDA, Cascade R-CNN 수행|https://github.com/HYU-kbs|
+|🤗|김준태|Faster R-CNN 실험|https://github.com/sronger|
 |😎|김지성|공용 도구 개발, YOLO 실험, 앙상블 실험|https://github.com/intelli8786|
 |😆|백종원|YOLO 실험, EfficientDet 실험|https://github.com/Baek-jongwon|
 |😊|정소희|Faster R-CNN, Test time augmentation 실험|https://github.com/SoheeJeong|
@@ -31,7 +31,7 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
 
 |모델|mAP50|config|
 |------|---|---|
-|SwinTransformer, FasterR-CNN|xx.xxx|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_config)|
+|SwinTransformer, FasterR-CNN|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_config)|
 |SwinTransformer, FasterR-CNN, MultiScaleTTA|0.531|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_MultiScale_config)|
 |SwinTransformer, FasterR-CNN, TileAugTTA|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_TileAug_config)|
 |모델|xx.xxx|link to config|
