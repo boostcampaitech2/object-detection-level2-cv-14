@@ -12,18 +12,19 @@
 ### 팀원 소개
 팀명: Machine==우리조 
 
-팀원: 
-|이름|github|기타|
-|------|---|---|
-|김범수|테스트2|테스트3|
-|김준태|테스트2|테스트3|
-|김지성|테스트2|테스트3|
-|백종원|테스트2|테스트3|
-|정소희|https://github.com/SoheeJeong|테스트3|
-|홍지연|테스트2|테스트3|
+||이름|github|
+|---|------|---|
+|😙|김범수|https://github.com/HYU-kbs|
+|🤗|김준태|https://github.com/sronger|
+|😎|김지성|https://github.com/intelli8786|
+|😆|백종원|https://github.com/Baek-jongwon|
+|😊|정소희|https://github.com/SoheeJeong|
+|😄|홍지연|https://github.com/hongjourney|
 
 
 ### 모델 성능 및 config file
+학습된 모델에 대한 설명과 성능, 각 모델에 대한 config file의 위치를 표로 나타내었다.
+config file은 hyperparameter, model architecture, optimizer, scheduler, train/test dataset 등 모델에 대한 전반적인 학습 정보를 포함한다. 
 
 |모델|mAP50|config|
 |------|---|---|
@@ -37,7 +38,7 @@
 
 **DataRefiner**: 데이터를 분리하고 가공하는 모듈이다. 
 * 실행방법: ```python DataRefiner.py```
-* DataRefiner.py 코드는 다음 기능을 포함한다.
+* DataRefiner.py 코드의 기능:
   - Class imbalance를 줄이기 위해 각 클래스별 데이터 양을 균등하게 조정해 train, validation 데이터를 분할한다.
   - Detector가 분류하기 어려운 크기(factor_minSize)를 제거한다.
   - Train, Validation 데이터를 일정 비율(factor_trainValRatio)로 분리한다.
@@ -47,7 +48,7 @@
 * 실행방법: 
   - dependency 설치: ```pip install opencv-python```
   - 실행: ```python VisualizeEvaluation.py```
-* VisualizeEvaluation.py 코드는 다음 기능을 포함한다.
+* VisualizeEvaluation.py 코드의 기능:
   - 모델이 Test 데이터를 추론한 결과를 눈으로 확인하기 위한 목적으로 제작되었다.
   - GUI 환경에서 작동되므로, 콘솔환경에서는 사용할 수 없다.
   - Visualization 타겟은 Target Image, Bounding Box, Confidence, Class Name 이다.
