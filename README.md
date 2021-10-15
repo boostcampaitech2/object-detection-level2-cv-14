@@ -12,18 +12,19 @@
 ### 팀원 소개
 팀명: Machine==우리조 
 
-||이름|github|
-|---|------|---|
-|😙|김범수|https://github.com/HYU-kbs|
-|🤗|김준태|https://github.com/sronger|
-|😎|김지성|https://github.com/intelli8786|
-|😆|백종원|https://github.com/Baek-jongwon|
-|😊|정소희|https://github.com/SoheeJeong|
-|😄|홍지연|https://github.com/hongjourney|
+||이름|역할|github|
+|--|------|---|---|
+|😙|김범수|---|https://github.com/HYU-kbs|
+|🤗|김준태|---|https://github.com/sronger|
+|😎|김지성|공용 도구 개발, YOLO 실험, 앙상블 실험|https://github.com/intelli8786|
+|😆|백종원|YOLO 실험, EfficientDet 실험|https://github.com/Baek-jongwon|
+|😊|정소희|Faster R-CNN, Test time augmentation 실험|https://github.com/SoheeJeong|
+|😄|홍지연|Faster R-CNN 성능 개선|https://github.com/hongjourney|
 
 
 ### 모델 성능 및 config file -> 각자 config file 올려주신 후 표에 적어주세요!! 
 학습된 모델에 대한 설명과 성능, 각 모델에 대한 config file의 위치를 표로 나타내었다.
+
 config file은 hyperparameter, model architecture, optimizer, scheduler, train/test dataset 등 모델에 대한 전반적인 학습 정보를 포함한다. 
 
 |모델|mAP50|config|
@@ -59,3 +60,5 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
   - down Key : 인덱스를 10칸 뒤로 이동시킨다.
   - esc Key : 프로세스를 종료한다.
   - S Key : 현재 표시되는 시각화된 이미지를 저장한다.
+
+**configs**: 각 모델에 대한 config 파일이 담겨있는 폴더이다.
