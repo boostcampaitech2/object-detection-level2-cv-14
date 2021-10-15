@@ -1,5 +1,6 @@
 '''
-num_classes = 10으로 변경했습니다. 
+Base Model Settings
+- num_classes = 10으로 변경
 '''
 # model settings
 model = dict(

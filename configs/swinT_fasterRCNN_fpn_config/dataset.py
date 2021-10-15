@@ -1,10 +1,17 @@
-''''''
-# dataset settings
+''''
+Dataset Settings
+- classes로 선언
+- augmentation
+- batch_size = samples_per_gpu x gpu개수
+- train, valid, test pipeline
+'''
+
+
+
 dataset_type = 'CocoDataset'
 data_root = '/opt/ml/detection/dataset/'
+
 classes = ( "General trash","Paper","Paper pack","Metal","Glass","Plastic", "Styrofoam","Plastic bag","Battery","Clothing")
-
-
 
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
@@ -28,11 +35,10 @@ albu_test_transforms = [
 ]
 
 
-# augumentation 추가하지 않고 Pad는 제외한 상태
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
-    dict(type='Resize', img_scale=(1024, 1024), keep_ratio=True), #resize 조정
+    dict(type='Resize', img_scale=(1024, 1024), keep_ratio=True), 
     dict(type='Albu',transforms=albu_train_transforms),
     dict(type='RandomFlip', flip_ratio=0.1),
     dict(type='Normalize', **img_norm_cfg),
@@ -47,7 +53,7 @@ test_pipeline = [
         flip=False,
         transforms=[
             dict(type='Albu', transforms=albu_test_transforms),
-            dict(type='Resize', keep_ratio=True), #resize 조정
+            dict(type='Resize', keep_ratio=True), 
             dict(type='RandomFlip'),
             dict(type='Normalize', **img_norm_cfg),
             dict(type='ImageToTensor', keys=['img']),
@@ -58,8 +64,8 @@ test_pipeline = [
 
 
 data = dict(
-    samples_per_gpu=8, #batch_size = samples_per_gpu*gpu개수 = 8
-    workers_per_gpu=2, #데이터로더의 num workers와 동일
+    samples_per_gpu=8, 
+    workers_per_gpu=2, 
     train=dict(
         type=dataset_type,
         ann_file=data_root + 'Annotations/coco/fold_2_train.json',

@@ -1,5 +1,6 @@
 '''
-1. WandbLoggerHook 를 추가했습니다. https://github.com/boostcampaitech2/object-detection-level2-cv-14/discussions/6
+Runtime Settings
+- WandbLoggerHook 추가
 '''
 log_config = dict(
     interval=50,
@@ -7,8 +8,8 @@ log_config = dict(
         dict(type='TextLoggerHook'),
         dict(type='WandbLoggerHook',interval=1000, 
             init_kwargs=dict(
-                project='fasterRCNN_r50_fpn',
-                name = 'fold3_cosineAnnealing_aug') #'실험할때마다 RUN에 찍히는 이름'
+                project='faster_RCNN', #project_name
+                name = 'exp5_cosineAnealing') # exp_name
             )
     ])
 # yapf:enable
