@@ -23,8 +23,8 @@
 
 
 ### 모델 성능 및 config file -> 각자 config file 올려주신 후 표에 적어주세요!! 
-학습된 모델에 대한 설명과 성능, 각 모델에 대한 config file의 위치를 표로 나타내었다.
 
+학습된 모델에 대한 설명과 성능, 각 모델에 대한 config file의 위치를 표로 나타내었다.
 config file은 hyperparameter, model architecture, optimizer, scheduler, train/test dataset 등 모델에 대한 전반적인 학습 정보를 포함한다. 
 
 학습, 추론을 위해 mmdetection library를 설치해야 한다. [링크](https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md)를 참조.
