@@ -34,7 +34,8 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
 |SwinTransformer, FasterR-CNN|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_config)|
 |SwinTransformer, FasterR-CNN, MultiScaleTTA|0.531|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_MultiScale_config)|
 |SwinTransformer, FasterR-CNN, TileAugTTA|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_TileAug_config)|
-|YOLOv4|0.473|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/YOLOv4_Darknet)|
+|YOLOv4 416|0.441|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/blob/main/configs/YOLOv4_Darknet/yolov4_input416_batch64.cfg)|
+|YOLOv4 832|0.473|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/blob/main/configs/YOLOv4_Darknet/yolov4_input832_batch16.cfg)|
 |모델|xx.xxx|link to config|
 
 
