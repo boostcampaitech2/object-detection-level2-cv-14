@@ -27,7 +27,7 @@
 ## Final Config
 - `final_config.py`
 - Base Model의 backbone, neck 수정
-- evaluation 설정 : bbox_mAP_50 기준 best 모델 저장, 클래스 별 validation AP 확인
+- evaluation 설정 : bbox_mAP_50 기준 best 모델 저장, 클래스별 validation AP 확인
 - checkpoint 설정 : 모델 저장 주기, 경로 지정 
 
 
