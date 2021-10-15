@@ -5,4 +5,3 @@ _base_ = [
    'default_runtime.py',
    'schedule_1x.py'
 ]
-#python tools/train.py configs/config_custom/final.py

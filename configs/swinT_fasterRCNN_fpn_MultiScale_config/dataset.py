@@ -87,7 +87,6 @@ test_pipeline = [
             dict(type='Collect', keys=['img']),
         ]),
 ]
-#python tools/test.py configs/config_custom/final.py work_dirs/final/epoch_32.pth --work_dir=work_dirs/tile_cropsize --eval=bbox
 
 data = dict(
     samples_per_gpu=4,
