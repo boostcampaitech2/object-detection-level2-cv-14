@@ -27,6 +27,8 @@
 
 config file은 hyperparameter, model architecture, optimizer, scheduler, train/test dataset 등 모델에 대한 전반적인 학습 정보를 포함한다. 
 
+학습, 추론을 위해 mmdetection library를 설치해야 한다. [링크](https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md)를 참조.
+
 |모델|mAP50|config|
 |------|---|---|
 |SwinTransformer, FasterR-CNN|xx.xxx|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_config)|
@@ -34,6 +36,9 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
 |SwinTransformer, FasterR-CNN, TileAugTTA|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_TileAug_config)|
 |모델|xx.xxx|link to config|
 |모델|xx.xxx|link to config|
+
+
+
 
 ### 실행파일 설명
 
