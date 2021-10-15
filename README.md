@@ -31,11 +31,11 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
 
 |모델|mAP50|config|
 |------|---|---|
-|SwinTransformer, FasterR-CNN|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_config)|
-|SwinTransformer, FasterR-CNN, MultiScaleTTA|0.531|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_MultiScale_config)|
-|SwinTransformer, FasterR-CNN, TileAugTTA|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_TileAug_config)|
-|YOLOv4 416|0.441|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/blob/main/configs/YOLOv4_Darknet/yolov4_input416_batch64.cfg)|
-|YOLOv4 832|0.473|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/blob/main/configs/YOLOv4_Darknet/yolov4_input832_batch16.cfg)|
+|SwinTransformer, FasterR-CNN|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/Models/swinT_fasterRCNN_fpn_config)|
+|SwinTransformer, FasterR-CNN, MultiScaleTTA|0.531|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/Models/swinT_fasterRCNN_fpn_MultiScale_config)|
+|SwinTransformer, FasterR-CNN, TileAugTTA|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/Models/swinT_fasterRCNN_fpn_TileAug_config)|
+|YOLOv4 416|0.441|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/blob/main/Models/YOLOv4_Darknet/yolov4_input416_batch64.cfg)|
+|YOLOv4 832|0.473|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/blob/main/Models/YOLOv4_Darknet/yolov4_input832_batch16.cfg)|
 |모델|xx.xxx|link to config|
 
 
@@ -67,4 +67,4 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
   - esc Key : 프로세스를 종료한다.
   - S Key : 현재 표시되는 시각화된 이미지를 저장한다.
 
-**configs**: 각 모델에 대한 config 파일이 담겨있는 폴더이다.
+**Model**: 각 모델에 대한 config 파일이 담겨있는 폴더이다.
