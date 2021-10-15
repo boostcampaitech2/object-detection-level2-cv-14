@@ -28,9 +28,9 @@ config file은 hyperparameter, model architecture, optimizer, scheduler, train/t
 
 |모델|mAP50|config|
 |------|---|---|
-|모델설명(ex: swint faster rcnn,multiscale TTA)|xx.xxx|link to config|
-|모델|xx.xxx|link to config|
-|모델|xx.xxx|link to config|
+|SwinTransformer, FasterR-CNN|xx.xxx|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_config)|
+|SwinTransformer, FasterR-CNN, MultiScaleTTA|0.531|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_MultiScale_config)|
+|SwinTransformer, FasterR-CNN, TileAugTTA|0.530|[config](https://github.com/boostcampaitech2/object-detection-level2-cv-14/tree/main/configs/swinT_fasterRCNN_fpn_TileAug_config)|
 |모델|xx.xxx|link to config|
 |모델|xx.xxx|link to config|
 
