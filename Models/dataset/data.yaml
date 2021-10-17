@@ -1,0 +1,14 @@
+names:
+- General trash
+- Paper
+- Paper pack
+- Metal
+- Glass
+- Plastic
+- Styrofoam
+- Plastic bag
+- Battery
+- Clothing
+nc: 10
+train: /dataset/train.txt
+val: /dataset/val.txt
