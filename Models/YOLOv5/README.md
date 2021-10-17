@@ -19,10 +19,6 @@ $ pip install -r requirements.txt
 <details>
 <summary>Training</summary>
 
-Run commands below to reproduce results
-on [COCO](https://github.com/ultralytics/yolov5/blob/master/data/scripts/get_coco.sh) dataset (dataset auto-downloads on
-first use). Training times for YOLOv5s/m/l/x are 2/4/6/8 days on a single V100 (multi-GPU times faster). Use the
-largest `--batch-size` your GPU allows (batch sizes shown for 16 GB devices).
 
 ```bash
 $ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
@@ -30,8 +26,18 @@ $ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 
                                          yolov5l                                24
                                          yolov5x                                16
 ```
-
-<img width="800" src="https://user-images.githubusercontent.com/26833433/90222759-949d8800-ddc1-11ea-9fa1-1c97eed2b963.png"> 
+  
+  위 포맷을 따라 코드 실행 - 실제 사용 커맨드 :
+  
+```bash
+$ python train.py --batch 8 
+                  --epochs 50 
+                  --data /opt/ml/detection/dataset/data.yaml 
+                  --cfg ./models/yolov5s.yaml 
+                  --weights yolov5s.pt 
+                  --name yolov5x_50epochs_img640
+```
+  
   
   
 </details>
@@ -55,8 +61,8 @@ $ python detect.py --source 0  # webcam
   위 포맷을 따라 코드 실행 - 실제 사용 커맨드 :
   
 ```bash
-$ python detect.py --weights /opt/ml/yolov5/yolov5/runs/train/yolov5l_50epochs/weights/best.pt 
-                   --img 416 
+$ python detect.py --weights /opt/ml/yolov5/yolov5/runs/train/yolov5x_50epochs/weights/best.pt 
+                   --img 640
                    --conf 0.05 
                    --source /img_path
 ```
