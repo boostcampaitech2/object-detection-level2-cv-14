@@ -22,7 +22,7 @@
 |😄|홍지연|Faster R-CNN 성능 개선|https://github.com/hongjourney|
 
 
-### 모델 성능 및 config file -> 각자 config file 올려주신 후 표에 적어주세요!! 
+### 모델 성능 및 config file
 
 학습된 모델에 대한 설명과 성능, 각 모델에 대한 config file의 위치를 표로 나타내었다.
 config file은 hyperparameter, model architecture, optimizer, scheduler, train/test dataset 등 모델에 대한 전반적인 학습 정보를 포함한다. 
