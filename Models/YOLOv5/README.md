@@ -34,32 +34,6 @@ $ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 
 <img width="800" src="https://user-images.githubusercontent.com/26833433/90222759-949d8800-ddc1-11ea-9fa1-1c97eed2b963.png"> 
   
   
-  
-  
-</details>
-
-<details open>
-<summary>Inference</summary>
-
-Inference with YOLOv5 and [PyTorch Hub](https://github.com/ultralytics/yolov5/issues/36). Models automatically download
-from the [latest YOLOv5 release](https://github.com/ultralytics/yolov5/releases).
-
-```python
-import torch
-
-# Model
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # or yolov5m, yolov5l, yolov5x, custom
-
-# Images
-img = 'https://ultralytics.com/images/zidane.jpg'  # or file, Path, PIL, OpenCV, numpy, list
-
-# Inference
-results = model(img)
-
-# Results
-results.print()  # or .show(), .save(), .crop(), .pandas(), etc.
-```
-
 </details>
 
 
@@ -67,8 +41,6 @@ results.print()  # or .show(), .save(), .crop(), .pandas(), etc.
 <details>
 <summary>Inference with detect.py</summary>
 
-`detect.py` runs inference on a variety of sources, downloading models automatically from
-the [latest YOLOv5 release](https://github.com/ultralytics/yolov5/releases) and saving results to `runs/detect`.
 
 ```bash
 $ python detect.py --source 0  # webcam
@@ -79,6 +51,21 @@ $ python detect.py --source 0  # webcam
                             'https://youtu.be/NUsoVlDFqZg'  # YouTube
                             'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
 ```
+  위 포맷을 따라 코드 실행
+  (사용 command : python detect.py --weights /opt/ml/yolov5/yolov5/runs/train/yolov5l_50epochs/weights/best.pt --img 416 --conf 0.05 --source /img_path)
+  
+  
+  
+  
+  
+</details>
+
+<details open>
+<summary>Inference with inference_submission.py</summary>
+
+  
+detect.py를 한 후 submission을 위한 csv파일 생성 코드 
+
 
 
 
