@@ -51,8 +51,17 @@ $ python detect.py --source 0  # webcam
                             'https://youtu.be/NUsoVlDFqZg'  # YouTube
                             'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
 ```
-  위 포맷을 따라 코드 실행
-  (사용 command : python detect.py --weights /opt/ml/yolov5/yolov5/runs/train/yolov5l_50epochs/weights/best.pt --img 416 --conf 0.05 --source /img_path)
+  
+  위 포맷을 따라 코드 실행 - 실제 사용 커맨드 :
+  
+```bash
+$ python detect.py --weights /opt/ml/yolov5/yolov5/runs/train/yolov5l_50epochs/weights/best.pt 
+                   --img 416 
+                   --conf 0.05 
+                   --source /img_path
+```
+  
+
   
   
   
