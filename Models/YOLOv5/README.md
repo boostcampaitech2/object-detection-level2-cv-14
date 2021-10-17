@@ -38,6 +38,34 @@
    <a href="https://www.instagram.com/ultralytics/">
    <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-instagram.png" width="2%"/>
    </a>
+</div>
+
+<br>
+<p>
+YOLOv5 ?? is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a>
+ open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
+</p>
+
+<!-- 
+<a align="center" href="https://ultralytics.com/yolov5" target="_blank">
+<img width="800" src="https://github.com/ultralytics/yolov5/releases/download/v1.0/banner-api.png"></a>
+-->
+
+</div>
+
+## <div align="center">Documentation</div>
+
+See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on training, testing and deployment.
+
+## <div align="center">Quick Start Examples</div>
+
+<details open>
+<summary>Install</summary>
+
+[**Python>=3.6.0**](https://www.python.org/) is required with all
+[requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) installed including
+[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/):
+<!-- $ sudo apt update && apt install -y libgl1-mesa-glx libsm6 libxext6 libxrender-dev -->
 
 ```bash
 $ git clone https://github.com/ultralytics/yolov5
@@ -113,19 +141,19 @@ $ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 
 <details open>
 <summary>Tutorials</summary>
 
-* [Train Custom Data](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data)&nbsp; 🚀 RECOMMENDED
-* [Tips for Best Training Results](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)&nbsp; ☘️
+* [Train Custom Data](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data)&nbsp; ?? RECOMMENDED
+* [Tips for Best Training Results](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)&nbsp; ?섓툘
   RECOMMENDED
-* [Weights & Biases Logging](https://github.com/ultralytics/yolov5/issues/1289)&nbsp; 🌟 NEW
-* [Roboflow for Datasets, Labeling, and Active Learning](https://github.com/ultralytics/yolov5/issues/4975)&nbsp; 🌟 NEW
+* [Weights & Biases Logging](https://github.com/ultralytics/yolov5/issues/1289)&nbsp; ?뙚 NEW
+* [Roboflow for Datasets, Labeling, and Active Learning](https://github.com/ultralytics/yolov5/issues/4975)&nbsp; ?뙚 NEW
 * [Multi-GPU Training](https://github.com/ultralytics/yolov5/issues/475)
-* [PyTorch Hub](https://github.com/ultralytics/yolov5/issues/36)&nbsp; ⭐ NEW
-* [TorchScript, ONNX, CoreML Export](https://github.com/ultralytics/yolov5/issues/251) 🚀
+* [PyTorch Hub](https://github.com/ultralytics/yolov5/issues/36)&nbsp; 狩?NEW
+* [TorchScript, ONNX, CoreML Export](https://github.com/ultralytics/yolov5/issues/251) ??
 * [Test-Time Augmentation (TTA)](https://github.com/ultralytics/yolov5/issues/303)
 * [Model Ensembling](https://github.com/ultralytics/yolov5/issues/318)
 * [Model Pruning/Sparsity](https://github.com/ultralytics/yolov5/issues/304)
 * [Hyperparameter Evolution](https://github.com/ultralytics/yolov5/issues/607)
-* [Transfer Learning with Frozen Layers](https://github.com/ultralytics/yolov5/issues/1314)&nbsp; ⭐ NEW
+* [Transfer Learning with Frozen Layers](https://github.com/ultralytics/yolov5/issues/1314)&nbsp; 狩?NEW
 * [TensorRT Deployment](https://github.com/wang-xinyu/tensorrtx)
 
 </details>
@@ -163,14 +191,14 @@ Get started in seconds with our verified environments. Click each icon below for
     </a>
 </div>
 
-|Weights and Biases|Roboflow - ⭐ NEW|
+|Weights and Biases|Roboflow - 狩?NEW|
 |:-:|:-:|
 |Automatically track and visualize all your YOLOv5 training runs in the cloud with [Weights & Biases](https://wandb.ai/site?utm_campaign=repo_yolo_readme)|Label and automatically export your custom datasets directly to YOLOv5 for training with [Roboflow](https://roboflow.com/?ref=ultralytics) |
 
 
 <!-- ## <div align="center">Compete and Win</div>
 
-We are super excited about our first-ever Ultralytics YOLOv5 🚀 EXPORT Competition with **$10,000** in cash prizes!
+We are super excited about our first-ever Ultralytics YOLOv5 ?? EXPORT Competition with **$10,000** in cash prizes!
 
 <p align="center">
   <a href="https://github.com/ultralytics/yolov5/discussions/3213">
